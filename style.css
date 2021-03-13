@@ -7,21 +7,23 @@ html,body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(fotos/fundo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: 100%;
     
 }
 
-#fundo{
-    margin: 0px;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 15px;
-}
+
+
 
 #foto-perfil{
     width: 100px;
     position: relative;
-    left: 150px;
+    left: 130px;
     border: rgb(196, 5, 5);
     border-radius: 15px;
     border-style: groove;
@@ -34,17 +36,14 @@ html,body{
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    width: 400px;
+    box-shadow: 3px 3px 15px black;
+    width: 360px;
     height: 500px;
     text-align: center;
     
 
 }
 
-#dados{
-    padding-block-end: 100px;
-    border-radius: 15px;
-}
 
 #dados > h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -61,24 +60,28 @@ html,body{
 }
 
 #dados > a > h3{
-    padding: 10px;
     display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
     border-style: groove;
-    border-radius: 10px;
+    border-color: indigo;
+    font: 14pt Arial;
+    background-color: indigo;
     text-decoration: none;
-    opacity: 50%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 249, 249);
 }
 
 #dados > a:hover > h3{
-    padding-left: 2px;
-    padding-right: 2px;
-    background-color: rgb(42, 81, 165);
-    opacity: 100%;
-    font-style: italic;
+    background-color: ivory;
+    color: indigo;
+    border-color: indigo;
+    padding: 15px;
 }
 
 #dados >a:active > h3{
-    opacity: 100%;
     color: rgb(0, 255, 42);
+}
+
+#fundo{
+    background-image: url(fotos/fundo.jpg);
 }
