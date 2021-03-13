@@ -1,38 +1,84 @@
-body{
-    
+html,body{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
     background-color: rgb(8, 155, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
 }
-
 
 #fundo{
-    background-color: rgb(63, 12, 145);
-    color: deeppink;
-    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 15px;
 }
 
-
 #foto-perfil{
-    width: 200px;
+    width: 100px;
+    position: relative;
+    left: 150px;
+    border: rgb(196, 5, 5);
+    border-radius: 15px;
+    border-style: groove;
+
 }
 
 
 #grid{
-    background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 10px;
-    width: 500px;
+    width: 400px;
     height: 500px;
     text-align: center;
+    
+
 }
 
 #dados{
-    background-color: floralwhite;
     padding-block-end: 100px;
     border-radius: 15px;
-    margin: 0px;
 }
 
-#dados > section {
-    text-align: left;
+#dados > h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+#dados > p, span{
+    opacity: 70%;
+    font-style: italic;
+}
+
+#dados > h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    text-align: center;
+}
+
+#dados > a > h3{
+    padding: 10px;
+    display: inline-block;
+    border-style: groove;
+    border-radius: 10px;
+    text-decoration: none;
+    opacity: 50%;
+    color: rgb(0, 0, 0);
+}
+
+#dados > a:hover > h3{
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: rgb(42, 81, 165);
+    opacity: 100%;
+    font-style: italic;
+}
+
+#dados >a:active > h3{
+    opacity: 100%;
+    color: rgb(0, 255, 42);
+}
