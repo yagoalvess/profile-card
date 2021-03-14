@@ -14,6 +14,8 @@ html,body{
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: 100%;
+    background-size: cover;
+    overflow: hidden;
     
 }
 
@@ -22,54 +24,49 @@ html,body{
 
 #foto-perfil{
     width: 100px;
-    position: relative;
-    top: 90px;
-    left: 120px;
+    position: sticky;
+    margin: 0 auto;
     border-radius: 100px;
-    border: 10px solid white;
+    border: 10px solid;
+    transition: ease 2s;
+    
+    
 }
 
 
 #grid{
+    transition: ease 3s;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(19, 14, 14);
     border-radius: 10px;
     box-shadow: 3px 3px 15px black;
     width: 360px;
     height: 500px;
     text-align: center;
-    
-    
-
 }
 
 
-#fundo{
-    position: absolute;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 8px;
-}
 
 #dados{
     position: relative;
-    top: 75px;
+    top: 50px;
+    color: blue;
+    
 }
 
-#dados > h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
 
 #dados > p, span{
     opacity: 70%;
     font-style: italic;
 }
 
+
 #dados > h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     text-align: center;
 }
+
+
 
 #dados > a > h3{
     display: inline-block;
@@ -83,6 +80,8 @@ html,body{
     color: rgb(255, 249, 249);
 }
 
+
+
 #dados > a:hover > h3{
     background-color: ivory;
     color: indigo;
@@ -90,10 +89,35 @@ html,body{
     padding: 15px;
 }
 
+
+
 #dados >a:active > h3{
     color: rgb(0, 255, 42);
 }
 
+
+
 #fundo{
     background-image: url(fotos/fundo.jpg);
 }
+
+
+
+
+@media screen and (max-width:480px){
+
+    #grid{
+        width: 240px;
+    }
+
+    #foto-perfil{
+        left: 62px;
+    }
+     
+    #fundo{
+        width: 240px;
+    }
+}
+
+
+
